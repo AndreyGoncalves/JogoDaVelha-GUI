@@ -36,7 +36,7 @@ Projete de forma que cada ação de validação do jogo (i.e. `boolean ganhou()`
 
 ### Material de apoio
 
-Criando uma matriz de caracteres. [De acordo com a documentação oficial](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html), em Java o tipo primitivo `char` armazena um único caracter 16-bit Unicode.  Se uma variável declarada como `char` não for inicializada explicitamente, essa fica com o valor padrão `\u0000`.
+Criando uma matriz de caracteres. [De acordo com a documentação oficial](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html), em Java o tipo primitivo `char` armazena um único caractere 16-bit Unicode.  Se uma variável declarada como `char` não for inicializada explicitamente, essa fica com o valor padrão `\u0000`.
 
 ```java
 // Definindo estaticamente valores ao criar matriz
@@ -45,6 +45,11 @@ char[][] tab = {{'X',' ',' '},{' ','X',' '},{' ',' ','X'}};
 // Criando matriz de caracteres 
 char[][] tab = new tab[3][3];
 tab[0][0] = ' '; // atribuindo 'espaço' na linha 0 e coluna 0
+
+// Exemplos para matriz com inteiros
+int[][] taba = {{1,-1,0},{0,1,0},{0,0,0}};
+int[][] novoTab = new int[3][3];
+novoTab[0][0] = 1;
 ```
 
 
