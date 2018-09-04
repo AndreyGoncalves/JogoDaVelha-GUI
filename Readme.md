@@ -14,7 +14,13 @@
 > 1. Crie classes para teste de unidade (JUnit) e teste todos os métodos essenciais e faça um *commit* com os testes 
 > 1. Tenha certeza que seu código passe por todos os testes e que possa ser executado sem problemas
 
+#### Passos para desenvolvimento
 
+> 1. O projeto deve ser desenvolvido em grupo com duas ou uma pessoa
+> 2. Reserve os 10 minutos iniciais para pensar na organização de como atacará o problema
+> 3. Determine como os componentes da dupla irão trabalhar
+>    1. **Programação em dupla em um único computador**, da [*Extreme Programming* (XP)](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_extrema).  Um aluno codifica e outro aluno ajuda. Dessa forma, o código sempre é revisto por duas pesssoas, podendo assim diminuir a possibilidade de defeitos.
+>    2. **Cada aluno com seu próprio computador**. Um aluno clona o repositório com o código inicial fornecido pelo professor, cria um projeto com IntelliJ, cria o .gitignore, faz os *commits* iniciais e faz um *push* do projeto para o repositório remoto. O outro aluno clona o repositório remoto em sua máquina local. Cada aluno fica responsável por criar uma classe de testes e é feita uma distrubuição dos testes, bem como da  implementação da lógica do jogo, que serão realizados por cada aluno. O uso de branchs é altamente recomendado.
 
 ## Jogo da velha
 
@@ -43,13 +49,14 @@ Criando uma matriz de caracteres. [De acordo com a documentação oficial](https
 char[][] tab = {{'X',' ',' '},{' ','X',' '},{' ',' ','X'}};
 
 // Criando matriz de caracteres 
-char[][] tab = new tab[3][3];
+char[][] tab = new char[3][3];
 tab[0][0] = ' '; // atribuindo 'espaço' na linha 0 e coluna 0
 
 // Exemplos para matriz com inteiros
-int[][] taba = {{1,-1,0},{0,1,0},{0,0,0}};
-int[][] novoTab = new int[3][3];
-novoTab[0][0] = 1;
+int[][] tab2 = new int[][]{{0,0,0},{0,1,0},{0,0,0}};
+int[][] tab3 = {{1,-1,0},{0,1,0},{0,0,0}};
+int[][] tab4 = new int[3][3];
+tab4[0][0] = 1;
 ```
 
 
@@ -97,7 +104,7 @@ Uma forma de limpar a tela
  * Esse código não funcionará, por exemplo, quando se executa o programa
  * dentro do IntelliJ ou mesmo no prompt do Windows
  */
-public static void limparTelaTerminalVT100(){
+public void limparTelaTerminalVT100(){
 	System.out.print("\033[H\033[2J");
 	System.out.flush();
 }
