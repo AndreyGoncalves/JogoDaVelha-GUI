@@ -32,7 +32,7 @@ O jogo poderá ser jogado por 2 jogadores humanos ou por 1 jogador com 1 jogador
 
 
 
-Projete de forma que cada ação de validação do jogo (i.e. `boolean ganhou()`, `boolean tabuleiroCheio()`) esteja um método separado e que possa ser testado automaticamente.
+Projete de forma que cada ação de validação do jogo (p. ex. `boolean ganhou()`, `boolean tabuleiroCheio()`) esteja um método separado e que possa ser testado automaticamente (recebendo uma entrada e retornando uma saída).
 
 
 
